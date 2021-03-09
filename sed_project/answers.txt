@@ -1,0 +1,22 @@
+
+Sed Project answers
+Jacob Kucinski
+CIS 241-02
+
+
+1. sed -nrsE "s/color/colour/g p; s/honor/honour/g p; s/behavior/behaviour/g p; s/humor/humor/g p" /usr/share/dict/american-english > work1.txt
+
+2. sed -E "s/FOOPS/if/g" /home/woodriir/241/prog.c | sed -E "s/BEEPBOOP/\/\*\*/g" > MyFile.c
+
+3. sed -E "/\<script\>/, /\<script\>/ d; /\<\/script\>/, /\<\/script\>/ d" faculty > faculty.index
+
+4. sed -nE "/\#\s{1,2}define\s{1,2}(INT|UINT|CHAR|UCHAR|SHRT|USHRT|LONG|ULONG)\_(MIN|MAX)/ p" /usr/include/limits.h > clean_limits.h
+
+5. sed -i.ORIG "s/gattaca/\@\@GREAT MOVIE\@\@/g" dna.txt
+
+6. sed -f decoder.txt /home/woodriir/241/file > decoded
+
+7. sed -n "50,1000 p" /home/woodriir/241/lyrics | tac > ending_lyrics
+
+8. see the hwinfo.sh file
+
